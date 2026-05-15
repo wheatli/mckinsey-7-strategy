@@ -31,7 +31,7 @@ description: 麦肯锡七步法第 4 步：制定工作计划。当 step-3 已�
 
 ### Step 4.1 — 复制模板 + 加载 Key Drivers
 
-读取模板 `templates/04-workplan.md`，复制到 `docs/strategy/<code>/step-4-workplan.md`。
+读取本 skill 同目录下的 `template.md`，复制到 `docs/strategy/<code>/step-4-workplan.md`。
 
 读取 `step-3-priorities.md` 的保留假设，把每个 Key Driver 编号 + 陈述填到工作计划表的"#" 和"假设"列。
 
@@ -121,7 +121,7 @@ description: 麦肯锡七步法第 4 步：制定工作计划。当 step-3 已�
 
 ## 产出物
 
-- 模板：`templates/04-workplan.md`
+- 模板：本 skill 同目录 `template.md`
 - 落盘：`docs/strategy/<code>/step-4-workplan.md`
 
 ## 自检清单（完成门禁）

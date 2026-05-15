@@ -30,7 +30,7 @@ description: 麦肯锡七步法第 5 步：进行关键分析。当 step-4 已�
 
 ### Step 5.1 — 复制模板 + 加载工作计划
 
-读取模板 `templates/05-analysis-log.md`，复制到 `docs/strategy/<code>/step-5-analysis.md`。
+读取本 skill 同目录下的 `template.md`，复制到 `docs/strategy/<code>/step-5-analysis.md`。
 
 读取 `step-4-workplan.md`，把每个假设填到"总览"表（状态默认"未开始"）。为每个假设预留一个"详细记录"块。
 
@@ -120,7 +120,7 @@ description: 麦肯锡七步法第 5 步：进行关键分析。当 step-4 已�
 
 ## 产出物
 
-- 模板：`templates/05-analysis-log.md`
+- 模板：本 skill 同目录 `template.md`
 - 落盘：`docs/strategy/<code>/step-5-analysis.md`
 
 ## 自检清单（完成门禁）

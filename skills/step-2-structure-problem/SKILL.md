@@ -30,7 +30,7 @@ description: 麦肯锡七步法第 2 步：分解问题。当 step-1 已产出�
 
 ### Step 2.1 — 复制模板 + 加载焦点问题
 
-读取模板 `templates/02-issue-tree.md`，复制到 `docs/strategy/<code>/step-2-tree.md`。
+读取本 skill 同目录下的 `template.md`，复制到 `docs/strategy/<code>/step-2-tree.md`。
 
 读取 `step-1-problem.md` 的"焦点问题"，填入新文档元信息。
 
@@ -110,7 +110,7 @@ description: 麦肯锡七步法第 2 步：分解问题。当 step-1 已产出�
 
 ## 产出物
 
-- 模板：`templates/02-issue-tree.md`
+- 模板：本 skill 同目录 `template.md`
 - 落盘：`docs/strategy/<code>/step-2-tree.md`
 
 ## 自检清单（完成门禁）

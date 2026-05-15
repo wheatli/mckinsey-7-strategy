@@ -36,7 +36,7 @@ description: 麦肯锡七步法第 1 步：陈述问题。当用户已通过 mck
 
 ### Step 1.1 — 复制模板
 
-读取模板 `templates/01-problem-statement.md`（相对仓库根目录），用 Write 工具复制到：
+读取本 skill 同目录下的 `template.md`，用 Write 工具复制到：
 
 ```
 docs/strategy/<code>/step-1-problem.md
@@ -124,7 +124,7 @@ docs/strategy/<code>/step-1-problem.md
 
 ## 产出物
 
-- 模板：`templates/01-problem-statement.md`
+- 模板：本 skill 同目录 `template.md`
 - 落盘：`docs/strategy/<code>/step-1-problem.md`
 
 ## 自检清单（完成门禁）

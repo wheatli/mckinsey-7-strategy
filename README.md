@@ -61,11 +61,24 @@ docs/strategy/<项目代号>/  ← 7 份产出物 + README，可直接给决策�
 ### 前置条件
 
 - 安装 [Claude Code](https://claude.ai/code)
-- 在本仓库的工作目录下使用（skills 位于 `.claude/skills/`，会被 Claude Code 作为项目级 skill 自动识别）
+
+### 安装 Plugin
+
+```bash
+# 在 Claude Code 会话中执行：
+/plugin install https://github.com/wheatli/mckinsey-7-strategy
+```
+
+或本地开发模式：
+
+```bash
+git clone https://github.com/wheatli/mckinsey-7-strategy
+claude --plugin-dir ./mckinsey-7-strategy
+```
 
 ### 启动方式
 
-在本仓库目录里打开 Claude Code 会话，对 Claude 说：
+在你的项目目录里打开 Claude Code 会话，对 Claude 说：
 
 ```
 我想用麦肯锡七步法分析「是否应该把团队从 5 人扩到 10 人」
@@ -111,29 +124,23 @@ docs/strategy/team-scale-5-to-10/
 ## 📦 项目结构
 
 ```
-McKinsey-7-Strategy/
-├── README.md                              ← 本文件（项目说明）
-├── .claude/
-│   └── skills/                            ← 8 个项目级 skill（Claude Code 自动加载）
-│       ├── mckinsey-strategy/SKILL.md     ← 总入口（流程协调器）
-│       ├── step-1-define-problem/
-│       ├── step-2-structure-problem/
-│       ├── step-3-prioritize-issues/
-│       ├── step-4-workplan/
-│       ├── step-5-conduct-analysis/
-│       ├── step-6-synthesize/
-│       └── step-7-recommend/
-├── templates/                             ← 7 份产出物模板
-│   ├── 01-problem-statement.md
-│   ├── 02-issue-tree.md
-│   ├── 03-prioritization-matrix.md
-│   ├── 04-workplan.md
-│   ├── 05-analysis-log.md
-│   ├── 06-synthesis-pyramid.md
-│   └── 07-recommendation.md
-└── docs/
-    └── strategy/                          ← 用户产出物落盘位置
-        └── <项目代号>/                     ← 每次分析一个子目录
+McKinsey-7-Strategy/                         ← Plugin 仓库根
+├── README.md
+├── .claude-plugin/
+│   └── plugin.json                          ← Plugin 元信息
+├── skills/                                   ← 8 个 skill
+│   ├── mckinsey-strategy/SKILL.md            ← 总入口（流程协调器）
+│   ├── step-1-define-problem/
+│   │   ├── SKILL.md
+│   │   └── template.md                       ← 模板与 SKILL.md 同目录
+│   ├── step-2-structure-problem/{SKILL.md, template.md}
+│   ├── step-3-prioritize-issues/{SKILL.md, template.md}
+│   ├── step-4-workplan/{SKILL.md, template.md}
+│   ├── step-5-conduct-analysis/{SKILL.md, template.md}
+│   ├── step-6-synthesize/{SKILL.md, template.md}
+│   └── step-7-recommend/{SKILL.md, template.md}
+└── docs/                                     ← 用户安装后在自己项目里产出
+    └── strategy/<项目代号>/
 ```
 
 ---
@@ -189,9 +196,9 @@ McKinsey-7-Strategy/
 
 每个 skill 都是独立的 markdown 文件，结构清晰、易于修改：
 
-- 想加一种拆解维度 → 改 `.claude/skills/step-2-structure-problem/SKILL.md` 的引导对话
-- 想换一种优先级矩阵（如 RICE）→ 改 `.claude/skills/step-3-prioritize-issues/SKILL.md` + `templates/03-prioritization-matrix.md`
-- 想加一个 step-8（实施跟踪） → 在 `.claude/skills/` 下加一个目录，并修改 step-7 的"完成后交接"
+- 想加一种拆解维度 → 改 `skills/step-2-structure-problem/SKILL.md` 的引导对话
+- 想换一种优先级矩阵（如 RICE）→ 改 `skills/step-3-prioritize-issues/SKILL.md` + 同目录 `template.md`
+- 想加一个 step-8（实施跟踪） → 在 `skills/` 下加一个目录，并修改 step-7 的"完成后交接"
 
 也可以直接 fork 这个仓库，按你的行业 / 团队习惯定制术语和模板。
 

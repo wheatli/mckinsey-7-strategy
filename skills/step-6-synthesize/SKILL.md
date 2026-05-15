@@ -34,7 +34,7 @@ description: 麦肯锡七步法第 6 步：综合调查结果。当 step-5 已�
 
 ### Step 6.1 — 复制模板 + 加载分析结论
 
-读取模板 `templates/06-synthesis-pyramid.md`，复制到 `docs/strategy/<code>/step-6-synthesis.md`。
+读取本 skill 同目录下的 `template.md`，复制到 `docs/strategy/<code>/step-6-synthesis.md`。
 
 读取 `step-5-analysis.md`：
 - 每个假设的最终结论 + So What
@@ -146,7 +146,7 @@ description: 麦肯锡七步法第 6 步：综合调查结果。当 step-5 已�
 
 ## 产出物
 
-- 模板：`templates/06-synthesis-pyramid.md`
+- 模板：本 skill 同目录 `template.md`
 - 落盘：`docs/strategy/<code>/step-6-synthesis.md`
 
 ## 自检清单（完成门禁）
