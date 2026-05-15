@@ -30,7 +30,7 @@ description: 麦肯锡七步法第 3 步：优先排序。当 step-2 已产出�
 
 ### Step 3.1 — 复制模板 + 加载假设
 
-读取插件模板 `templates/03-prioritization-matrix.md`，复制到 `docs/strategy/<code>/step-3-priorities.md`。
+读取模板 `templates/03-prioritization-matrix.md`，复制到 `docs/strategy/<code>/step-3-priorities.md`。
 
 读取 `step-2-tree.md` 的假设清单，把所有 H1, H2, ... 编号 + 陈述拷贝到新文档的评分表。
 
@@ -105,7 +105,7 @@ description: 麦肯锡七步法第 3 步：优先排序。当 step-2 已产出�
 
 ## 产出物
 
-- 模板：插件 `templates/03-prioritization-matrix.md`
+- 模板：`templates/03-prioritization-matrix.md`
 - 落盘：`docs/strategy/<code>/step-3-priorities.md`
 
 ## 自检清单（完成门禁）

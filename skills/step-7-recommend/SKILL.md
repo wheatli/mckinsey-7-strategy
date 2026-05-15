@@ -35,7 +35,7 @@ description: 麦肯锡七步法第 7 步：提出建议。当 step-6 已产出�
 
 ### Step 7.1 — 复制模板 + 加载金字塔
 
-读取插件模板 `templates/07-recommendation.md`，复制到 `docs/strategy/<code>/step-7-recommendation.md`。
+读取模板 `templates/07-recommendation.md`，复制到 `docs/strategy/<code>/step-7-recommendation.md`。
 
 读取：
 - `step-6-synthesis.md`：主结论、3 论点
@@ -158,7 +158,7 @@ description: 麦肯锡七步法第 7 步：提出建议。当 step-6 已产出�
 
 ## 产出物
 
-- 模板：插件 `templates/07-recommendation.md`
+- 模板：`templates/07-recommendation.md`
 - 落盘：`docs/strategy/<code>/step-7-recommendation.md`
 
 ## 自检清单（完成门禁）

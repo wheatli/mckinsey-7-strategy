@@ -34,7 +34,7 @@ flowchart TD
 ```
 
 每一步都有：
-- 一份模板（在 plugin 的 `templates/`）
+- 一份模板（在仓库根 `templates/`）
 - 一份产出物（在 `docs/strategy/<code>/`）
 - 一份硬门禁（拒绝跳步）
 - 一份自检清单 + 反模式表

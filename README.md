@@ -61,7 +61,7 @@ docs/strategy/<项目代号>/  ← 7 份产出物 + README，可直接给决策�
 ### 前置条件
 
 - 安装 [Claude Code](https://claude.ai/code)
-- 在本仓库的工作目录下使用（plugin 已注册到 `.claude/plugins/`，会被 Claude Code 自动识别）
+- 在本仓库的工作目录下使用（skills 位于仓库根 `skills/`，plugin 元信息位于 `.claude/plugins/plugin.json`，会被 Claude Code 自动识别）
 
 ### 启动方式
 
@@ -112,32 +112,30 @@ docs/strategy/team-scale-5-to-10/
 
 ```
 McKinsey-7-Strategy/
-├── README.md                                    ← 本文件（项目说明）
+├── README.md                              ← 本文件（项目说明）
 ├── .claude/
 │   └── plugins/
-│       └── mckinsey-7-steps/                    ← Plugin 本体
-│           ├── .claude-plugin/plugin.json       ← Plugin 元信息
-│           ├── README.md                        ← Plugin 内部使用说明
-│           ├── skills/                          ← 8 个 skill 定义
-│           │   ├── mckinsey-strategy/SKILL.md   ← 总入口（流程协调器）
-│           │   ├── step-1-define-problem/
-│           │   ├── step-2-structure-problem/
-│           │   ├── step-3-prioritize-issues/
-│           │   ├── step-4-workplan/
-│           │   ├── step-5-conduct-analysis/
-│           │   ├── step-6-synthesize/
-│           │   └── step-7-recommend/
-│           └── templates/                       ← 7 份产出物模板
-│               ├── 01-problem-statement.md
-│               ├── 02-issue-tree.md
-│               ├── 03-prioritization-matrix.md
-│               ├── 04-workplan.md
-│               ├── 05-analysis-log.md
-│               ├── 06-synthesis-pyramid.md
-│               └── 07-recommendation.md
+│       └── plugin.json                    ← Plugin 元信息
+├── skills/                                ← 8 个 skill 定义
+│   ├── mckinsey-strategy/SKILL.md         ← 总入口（流程协调器）
+│   ├── step-1-define-problem/
+│   ├── step-2-structure-problem/
+│   ├── step-3-prioritize-issues/
+│   ├── step-4-workplan/
+│   ├── step-5-conduct-analysis/
+│   ├── step-6-synthesize/
+│   └── step-7-recommend/
+├── templates/                             ← 7 份产出物模板
+│   ├── 01-problem-statement.md
+│   ├── 02-issue-tree.md
+│   ├── 03-prioritization-matrix.md
+│   ├── 04-workplan.md
+│   ├── 05-analysis-log.md
+│   ├── 06-synthesis-pyramid.md
+│   └── 07-recommendation.md
 └── docs/
-    └── strategy/                                ← 用户产出物落盘位置
-        └── <项目代号>/                           ← 每次分析一个子目录
+    └── strategy/                          ← 用户产出物落盘位置
+        └── <项目代号>/                     ← 每次分析一个子目录
 ```
 
 ---
