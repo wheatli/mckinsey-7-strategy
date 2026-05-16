@@ -1,0 +1,29 @@
+{
+  "name": "mckinsey-7-strategy",
+  "owner": {
+    "name": "wheatli"
+  },
+  "description": "麦肯锡七步成诗战略分析法 Plugin Marketplace",
+  "plugins": [
+    {
+      "name": "mckinsey-7-steps",
+      "source": "./",
+      "description": "麦肯锡七步成诗战略分析法：从一个 idea 引导到一份可执行的战略行动方案。包含 1 个总入口 skill 与 7 个步骤 skill，每步配套模板、产出物落盘、硬门禁串联。",
+      "version": "0.1.0",
+      "author": {
+        "name": "wheatli"
+      },
+      "homepage": "https://github.com/wheatli/mckinsey-7-strategy",
+      "keywords": [
+        "strategy",
+        "mckinsey",
+        "consulting",
+        "decision-making",
+        "framework",
+        "中文",
+        "issue-tree",
+        "MECE"
+      ]
+    }
+  ]
+}
