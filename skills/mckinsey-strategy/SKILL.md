@@ -30,7 +30,9 @@ flowchart TD
     S4 --> S5[step-5<br/>关键分析<br/>先粗后细，证伪]
     S5 --> S6[step-6<br/>综合发现<br/>金字塔结构]
     S6 --> S7[step-7<br/>提出建议<br/>SCP + 行动路径]
+    S7 --> S8[step-8 可选<br/>汇报 PPT<br/>python-pptx 14 页]
     S7 --> Done([可执行行动方案])
+    S8 --> Done
 ```
 
 每一步都有：
@@ -47,7 +49,7 @@ flowchart TD
 
 向用户输出（中文）：
 
-> 我会用麦肯锡七步成诗法，引导你把这个 idea 变成一份可执行的战略行动方案。整个过程会经历 7 步，每步产出一份 markdown 文档，落到 `docs/strategy/<项目代号>/`。
+> 我会用麦肯锡七步成诗法，引导你把这个 idea 变成一份可执行的战略行动方案。整个过程会经历 7 步（外加可选的 step-8 汇报 PPT），每步产出落到 `docs/strategy/<项目代号>/`。
 >
 > 每一步都有硬门禁——上一步没完成不能进下一步，避免凑数。
 >
@@ -111,6 +113,7 @@ mkdir -p docs/strategy/<code>
 - [ ] step-5: 关键分析 → `step-5-analysis.md`
 - [ ] step-6: 综合发现 → `step-6-synthesis.md`
 - [ ] step-7: 提出建议 → `step-7-recommendation.md`
+- [ ] step-8（可选）: 汇报 PPT → `<code>-report.pptx`
 
 ## 进度日志
 
